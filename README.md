@@ -4,7 +4,7 @@ This setup provides a modular Docker Compose architecture for running MySQL with
 
 ---
 
-## 📁 Folder Structure
+## Folder Structure
 
 ```
 DB/
@@ -30,7 +30,7 @@ monitoring/
 
 ---
 
-## 🐳 Services
+## Services
 
 | Service           | Description                               | Port Mapping     |
 |-------------------|-------------------------------------------|------------------|
@@ -42,7 +42,7 @@ monitoring/
 
 ---
 
-## 🔧 How to Use
+## How to Use
 
 
 All services rely on a shared Docker network called `monitor_net`:
@@ -56,7 +56,7 @@ This folder contains MySQL's data files and persists across container restarts.
 
 ---
 
-## 📋 Notes
+## Notes
 
 - Access phpMyAdmin: [http://localhost:18080](http://localhost:18080)
 - Access Prometheus: [http://localhost:19090](http://localhost:19090)
