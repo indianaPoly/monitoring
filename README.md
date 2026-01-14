@@ -62,6 +62,7 @@ This folder contains MySQL's data files and persists across container restarts.
 현업 및 추후 프로젝트에서 재사용할 수 있는 배포 템플릿과 Prometheus 연동 방법은 아래 문서를 참고하세요.
 
 - [배포 가이드라인 (Frontend/Backend 템플릿 사용법)](./docs/deployment-guide.md)
+- [AWS ECS(Fargate) + Terraform 배포 가이드](./docs/ecs-deployment.md)
 
 ---
 
