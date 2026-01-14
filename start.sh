@@ -11,10 +11,10 @@ fi
 
 # step 2 : db start
 echo "[INFO] Starting DB >>> mysql"
-docker-compose -f "$BASE_PATH/../DB/mysql/docker-compose.yml" --env-file "$BASE_PATH/../DB/mysql/.env" up -d
+docker-compose -f "$BASE_PATH/DB/mysql/docker-compose.yml" --env-file "$BASE_PATH/DB/mysql/.env" up -d
 
 # step 3 : monitoring start
 echo "[INFO] Starting Monitoring >>> Prometheus and Grafana"
-docker-compose -f "$BASE_PATH/../monitoring/docker-compose.yml" --env-file "$BASE_PATH/../monitoring/.env" up -d
+docker-compose -f "$BASE_PATH/monitoring/docker-compose.yml" --env-file "$BASE_PATH/monitoring/.env" up -d
 
 echo "[SUCCESS] All Services started!"

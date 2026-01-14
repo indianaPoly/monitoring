@@ -1,6 +1,6 @@
 # MySQL + phpMyAdmin + Prometheus + Grafana Docker Setup
 
-This setup provides a modular Docker Compose architecture for running MySQL with persistent storage, a web interface via phpMyAdmin, and a monitoring stack using Prometheus and Grafana.
+This setup provides a modular Docker Compose architecture for running MySQL with persistent storage, a web interface via phpMyAdmin, and a monitoring stack using Prometheus and Grafana. It also includes a deployment guide for integrating frontend/backend services into the monitoring network.
 
 ---
 
@@ -44,15 +44,24 @@ monitoring/
 
 ## How to Use
 
+### 1) 환경 변수 준비
+
+- `DB/mysql/.env.example`, `monitoring/.env.example`를 참고하여 `.env` 파일을 생성합니다.
 
 All services rely on a shared Docker network called `monitor_net`:
 
 ```bash
-chmod +x ./start/sh
+chmod +x ./start.sh
 ./start.sh
 ```
 
 This folder contains MySQL's data files and persists across container restarts.
+
+### 2) Frontend/Backend 템플릿 활용
+
+현업 및 추후 프로젝트에서 재사용할 수 있는 배포 템플릿과 Prometheus 연동 방법은 아래 문서를 참고하세요.
+
+- [배포 가이드라인 (Frontend/Backend 템플릿 사용법)](./docs/deployment-guide.md)
 
 ---
 
